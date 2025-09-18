@@ -12,6 +12,7 @@ struct ContentView: View {
         ZStack{
             Color(.bg)
                 .ignoresSafeArea()
+            // changing background colour with a custom colour  and ignoring the safe area so it could take the whole canvas
             TabView{
                 // Calling 4 instance of employee to create a tabview of 4 pages
                 employeeOrder(Name: "Naomi", employeePic: "employee1", totalPrice: 50, item1: .init(imageProduct: "salad2", title: "Salad", description: "Lettuce, Chicken", quantity: 1, price: 10),item2: .init(imageProduct: "cupCake", title: "CuPCake", description: "Chocolate flavour", quantity: 3, price: 15),item3: .init(imageProduct: "coffeeCup", title: "Large Coffee", description: "Mocha Late", quantity: 1, price: 13),item4: .init(imageProduct: "iceTea", title: "CuPCake", description: "Strawberry Tea ", quantity: 1, price: 10) ) // employee 1
