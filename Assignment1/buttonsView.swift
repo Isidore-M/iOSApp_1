@@ -7,12 +7,30 @@
 
 import SwiftUI
 
-struct buttonsView: View {
+struct cta: View {
+    var btTitle : String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("\(btTitle)") {
+            
+        }
+        .frame(width: 200, height: 40)
+        .background(.accent)
+        .foregroundColor(.white)
+        .cornerRadius(30)
     }
 }
-
+struct secondaryBt: View {
+    var btTitle : String
+    var body: some View {
+        Button("\(btTitle)") {
+            
+        }
+        .frame(width: 94, height: 40)
+        .background(.black)
+        .foregroundColor(.white)
+        .cornerRadius(30)
+    }
+}
 #Preview {
-    buttonsView()
+    secondaryBt(btTitle: "Next")
 }
